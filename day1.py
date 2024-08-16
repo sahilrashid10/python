@@ -1,0 +1,10 @@
+#t TIP CALCULATOR
+print("WELCOME TO TIP CALCULATOR!")
+bill = input("What was the total bill?")
+tip = ("How much tip would you like to give ($10,$20 or $30 )?")
+people = ("How many people to split the bill?")
+b=int(bill)
+t=int(tip)
+p=int(people)
+ans = round((b+t)/p,2)
+print(f"Each person should pay ${ans}.")
