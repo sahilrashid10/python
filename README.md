@@ -1,2 +1,2 @@
 # python
-all my codes from 100 days of code by angela yu
+This repo contain's small projects that i made while learning  python
