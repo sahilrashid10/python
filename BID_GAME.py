@@ -36,11 +36,11 @@ while flag:
     while x != "stop":
         x = input("yes to continue, no to see the result: ")
         if x == "yes":
-            print("\n"*10)
+            print("\n"*20)
             x="stop"
         elif x == "no":
             flag = False
-            print("\n"*10)
+            print("\n"*20)
             max_bid = -1
             winner = ""
             for key in auction_dictionary:
@@ -51,3 +51,6 @@ while flag:
             x="stop"
         else:
             print("********INVALID INPUT********* \n\n\n")
+#note 
+# you can use max(auction_dictionary,key=auction_dictionary.get)    to get the max value key easily (adjust code accordingly)
+            
