@@ -16,8 +16,10 @@ def black_jack():
 
     if computer_score == 21 and player_score != 21:
         print("You Lose, computer hits Black Jack 😶‍🌫️\n")
+        return
     if player_score == 21  :
         print("You hit Black Jack , you win 😍\n")
+        return
     print(f" your cards: {player_cards}, score {player_score}")
     print(f" computer cards: {computer_cards[0]} ")
 
@@ -66,7 +68,4 @@ while flag !='n':
     if flag == 'y':
         black_jack()
     if flag == 'n':
-        print("\nThanks for visiting ❤️")
-
-
-
+        print("\nThanks for visiting ❤️") 
