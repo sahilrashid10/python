@@ -26,7 +26,7 @@ while flag:
         random_steps = random.randint(0,20)
         t.forward(random_steps)
         if t.xcor() > 227:
-            print(f"{t.color()}: WON")
+            print(f"{t.pencolor()}: WON")
             if t.pencolor() == user_bet:
                 print("YOU WIN 😍")
             else:
