@@ -18,6 +18,10 @@ while flag < 50:
     guess = screen.textinput(f"{correct_guess}/50 Guess the state", "What is the next state?").title()
     #code to exit(exit no , Exit yes bcz guess is in title case)
     if guess == 'Exit':
+        #using list comprehension(to avoid for loop)
+        to_learn_list = [n for n in states if n not in guessed_state]
+        data = pandas.DataFrame(to_learn_list)
+        data.to_csv('learn')
         break
     if guess in states:
         guessed_state.append(guess)
@@ -37,12 +41,5 @@ while flag < 50:
             print("YOU WIN👾")
 
 # making a csv file for knowing missing states
-to_learn_list = []
 
-for s in states:
-    if s not in guessed_state:
-        to_learn_list.append(s)
-
-data = pandas.DataFrame(to_learn_list)
-data.to_csv('learn')
 
