@@ -1,0 +1,9 @@
+1.can't use pack and grid together
+2.use canvas.grid() to move image(Yes, using a Canvas in Tkinter to insert an image is a great way to manipulate its position.)
+3.Tkinter.BUTTON()
+4.using "with open("file_name","r/w/a") as file" => here file is closed itself that's why prefer it instead of open(file)
+5.Use of standard boxes via "messagebox" which is a different file in tkinter. Sep import line
+6.The random.randint(a, b) function in Python returns a random integer 𝑁 such that 𝑎 ≤ 𝑁 ≤𝑏
+7.random.shuffle(password_list)
+8.using LIST COMPREHENSION + join
+9.Pyperclip (used to copy some to clipboard)
