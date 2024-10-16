@@ -1,0 +1,9 @@
+1. answer = data[data["French"] == question]["English"].values[0] #.values(gives 1st match
+        of "French"] == question in col "English" )
+2.For canvas use itemconfig(reference, text="example") not config to change text.
+    reference = x =>  x=canvas.create_text(blabla)
+    canvas.config() sai "bg", "bd" change hoga i.e canvas kai attribut since image iska
+    items hai that's why use itmeconfig
+
+3.data = pandas.read_csv("./data/french_words.csv").to_dict(orient="records")
+
